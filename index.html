@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jan Ryan Hernandez – Virtual Professional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F7FD; --ink:#0F1F3D; --muted:#4F6082; --rule:#D3DEEF; --accent:#1D4ED8; --chip:#E2EBFA;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0C1526;--ink:#E6EDF9;--muted:#93A4C3;--rule:#22314D;--accent:#7FB0FF;--chip:#16233B}
+}
+:root[data-theme="dark"]{--bg:#0C1526;--ink:#E6EDF9;--muted:#93A4C3;--rule:#22314D;--accent:#7FB0FF;--chip:#16233B}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+main{max-width:760px;margin:0 auto;padding:72px 24px 96px}
+a{color:var(--accent)}
+.back-btn{display:inline-block;margin:0 0 40px;padding:8px 18px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);font-weight:500;font-size:.92rem;text-decoration:none;transition:background .15s,color .15s}
+.back-btn:hover{background:var(--accent);color:var(--bg)}
+.dl-btn{display:inline-block;margin:22px 0 0;padding:9px 20px;border-radius:8px;background:var(--accent);color:var(--bg);font-weight:500;font-size:.92rem;text-decoration:none}
+.dl-btn:hover{filter:brightness(1.1)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+header h1{font:500 clamp(2.6rem,8vw,4.2rem)/1.05 var(--serif);letter-spacing:-.02em;margin:0 0 14px}
+.role{font:400 1.25rem/1.4 var(--serif);color:var(--accent);margin:0 0 18px}
+.contact{display:flex;flex-wrap:wrap;gap:6px 24px;color:var(--muted);font-size:.95rem;margin:0}
+.contact a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+.contact a:hover{color:var(--ink)}
+
+section{margin-top:64px}
+h2{font:600 1.5rem/1.2 var(--serif);margin:0 0 20px;letter-spacing:-.01em}
+.summary{font:400 1.2rem/1.6 var(--serif);max-width:62ch;margin:0}
+
+.highlights{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:20px}
+.highlights li{padding-left:18px;border-left:2px solid var(--accent);max-width:64ch}
+.highlights strong{display:block;font-weight:500}
+.highlights span{color:var(--muted)}
+
+.employer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline;margin:0 0 4px}
+.employer h3{font:600 1.15rem/1.3 var(--serif);margin:0}
+.employer p{margin:0;color:var(--muted);font-size:.92rem}
+.tenure{color:var(--muted);font-size:.92rem;margin:0 0 28px}
+
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:1px solid var(--rule)}
+.timeline>li{position:relative;padding:0 0 32px}
+.timeline>li:last-child{padding-bottom:0}
+.timeline>li::before{content:"";position:absolute;left:-27.5px;top:.6em;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.timeline>li:first-child::before{background:var(--accent)}
+.when{font-size:.88rem;color:var(--muted);margin:0}
+.title{font-weight:500;margin:2px 0 8px}
+.timeline ul.duties{margin:0;padding-left:18px;max-width:64ch}
+.timeline ul.duties li{margin-bottom:4px}
+.tools{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:12px 0 0;padding:0}
+.tools li{background:var(--chip);font-size:.82rem;padding:2px 10px;border-radius:999px}
+
+.job{margin-top:56px}
+.job .timeline{margin-top:0}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:600px){.two{grid-template-columns:1fr}main{padding-top:48px}}
+.two p,.two ul{margin:0}
+.two ul{padding-left:18px}
+.edu-name{font-weight:500}
+.muted{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <a class="back-btn" href="https://arzed0305.github.io/myportfolio">Back to Portfolio</a>
+  <header>
+    <h1>Jan Ryan Hernandez</h1>
+    <p class="role">Virtual Professional</p>
+    <p class="contact">
+      <span>Toledo City, Cebu, Philippines</span>
+      <a href="mailto:janryan.hernandez@gmail.com">janryan.hernandez@gmail.com</a>
+      <a href="tel:+639399412018">+63 939 941 2018</a>
+    </p>
+    <a class="dl-btn" href="Jan-Ryan-Hernandez-Resume.pdf" download>Download PDF</a>
+  </header>
+
+  <section aria-labelledby="about">
+    <h2 id="about">Summary</h2>
+    <p class="summary">Organized operations and administrative professional with over 15 years of corporate experience in customer support, file organization and business reporting. I streamline daily operations, automate tedious spreadsheet work and keep digital workspaces tidy, so business leaders get their time back.</p>
+    <ul class="highlights">
+      <li><strong>Customer Service Representative</strong><span>Handled difficult customer situations while keeping satisfaction high.</span></li>
+      <li><strong>Team Leader</strong><span>Led 20 people with little data analysis experience and built their skills through the Queue Management Academy, a training program I started and ran.</span></li>
+      <li><strong>Business Analyst</strong><span>Improved standard operating procedures with process suggestions and automated reporting.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="exp">
+    <h2 id="exp">Experience</h2>
+
+    <div class="job">
+      <div class="employer"><h3>JPMorgan Chase &amp; Co.</h3><p>Cebu City, Cebu</p></div>
+      <p class="tenure">December 2009 to September 2026</p>
+      <ol class="timeline">
+        <li>
+          <p class="when">May 2024 to September 2026</p>
+          <p class="title">Business Analysis Associate II</p>
+          <ul class="duties">
+            <li>Part of the Business Intelligence Group, analyzing data for upper management from Vice President to Executive Director.</li>
+            <li>Built report automation and user tools that cut repetitive work and human error.</li>
+          </ul>
+          <ul class="tools"><li>Excel</li><li>Word</li><li>PowerPoint</li><li>SharePoint</li><li>SQL</li><li>Alteryx</li><li>HTML</li></ul>
+        </li>
+        <li>
+          <p class="when">July 2022 to May 2024</p>
+          <p class="title">Team Leader</p>
+          <ul class="duties">
+            <li>Managed 18 Business Process Senior Specialists supporting the Operations Team.</li>
+            <li>Coached and trained the team for professional growth.</li>
+            <li>Interviewed and assessed incoming team members.</li>
+          </ul>
+          <ul class="tools"><li>Excel</li><li>Word</li><li>PowerPoint</li><li>SharePoint</li><li>SQL</li><li>Alteryx</li><li>Webstats</li></ul>
+        </li>
+        <li>
+          <p class="when">July 2017 to July 2022</p>
+          <p class="title">Business Process Senior Specialist</p>
+          <ul class="duties">
+            <li>Supported the Operations Team and business decisions by managing the workforce side of the business.</li>
+            <li>Created reports and analysis that were reviewed and presented to management.</li>
+          </ul>
+          <ul class="tools"><li>Excel</li><li>Word</li><li>PowerPoint</li><li>SharePoint</li><li>SQL</li><li>Alteryx</li></ul>
+        </li>
+        <li>
+          <p class="when">March 2014 to July 2017</p>
+          <p class="title">Senior Service Specialist, Escalations</p>
+          <ul class="duties">
+            <li>Handled escalated calls and concerns from front-line customer service specialists.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="when">December 2009 to March 2014</p>
+          <p class="title">Customer Service Specialist</p>
+          <ul class="duties">
+            <li>Answered customer inquiries about deposit accounts.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <div class="job">
+      <div class="employer"><h3>TeleTech Inc.</h3><p>Pasay City, Metro Manila</p></div>
+      <p class="tenure">August 2007 to December 2009</p>
+      <ol class="timeline">
+        <li>
+          <p class="title">Customer Service Associate</p>
+          <ul class="duties">
+            <li>Answered customer inquiries by email.</li>
+            <li>Took calls and supported telco customers.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="two" aria-label="Skills and education">
+    <div>
+      <h2>Core skills</h2>
+      <ul>
+        <li>Data analysis: extraction, processing, analysis and visualization</li>
+        <li>People management</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <p class="edu-name">BS Business Administration, Major in Operations Management</p>
+      <p class="muted">Cebu Institute of Technology University, Cebu City<br>December 2024</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
